@@ -1,0 +1,26 @@
+.companies-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30vh;
+}
+.companies-block img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 5% 10%;
+}
+.companies-block img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=Companies-block.css.map */

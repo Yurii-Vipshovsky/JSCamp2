@@ -1,0 +1,65 @@
+.header-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #212832;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0625em;
+    font-weight: 400;
+    line-height: 1.375em;
+    letter-spacing: 0em;
+    text-align: left;
+    &__select-lang{
+        position: relative;
+        display: inline-block;
+        margin-right: 7vw;
+        &:hover{
+            .header-block__dropdown-content{
+                display: block;
+            }
+        }
+    }
+    &__dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+    }
+    
+}
+
+.menu-block{
+    display: flex;
+    width: 40vw;
+    margin-left: 15vw;
+    justify-content: space-evenly;
+    &__link{
+        text-decoration: none;
+        color: #212832;
+    }    
+}
+
+.auth-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+    &__login{
+        font-weight: 500;
+        cursor: pointer;
+    }
+    &__sign-up{
+        border: 1px solid rgb(33, 40, 50);
+        border-radius: 5px;
+        padding: 0.5em 1.2em;
+        background-color: transparent;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.0625em;
+        font-weight: 500;
+        line-height: 1.375em;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+}

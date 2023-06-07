@@ -8,10 +8,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="style/style.css" rel="stylesheet">
+        <link href="style/header.css" rel="stylesheet">
+        <link href="style/First-block.css" rel="stylesheet">
+        <link href="style/Second-block.css" rel="stylesheet">
+        <link href="style/Third-block.css" rel="stylesheet">
+        <link href="style/Fourth-block.css" rel="stylesheet">
+        <link href="style/Fifth-block.css" rel="stylesheet">
+        <link href="style/Companies-block.css" rel="stylesheet">
     </head>
     <body>
         <header class="header-block">
-            <img class="header-block__logo" src="images/Logo.svg" alt="Jadoo"/>
+            <img class="header-block__logo" src="images/Header/Logo.svg" alt="Jadoo"/>
             <div class="menu-block">
                 <a href="#" class="menu-block__link">Destinations</a>
                 <a href="#" class="menu-block__link">Hotels</a>
@@ -24,7 +31,7 @@
             </div>
             <div class="header-block__select-lang">
                 <span>EN</span>
-                <img src="images/Lang-select.svg" />
+                <img src="images/Header/Lang-select.svg" />
                 <div class="header-block__dropdown-content">
                   <p>UA</p>
                 </div>
@@ -32,6 +39,7 @@
             <!-- En slider-->
         </header>
         <div class="first-block">
+            <div class="first-block__decore"></div>
             <div class="first-block__text-element">
                 <h2>BEST DESTINATIONS AROUND THE WORLD</h2>
                 <h1>Travel, enjoy<br/>
@@ -50,7 +58,7 @@
             </div>
             <div class="first-block__image-element">
                 <img class="first-block__first-plane" src="images/plane.svg" alt="Plane"/>
-                <img class="first-block__traveller" src="images/Traveller.png" alt="Traveller"/>
+                <img class="first-block__traveller" src="images/First-block/Traveller.png" alt="Traveller"/>
                 <img class="first-block__second-plane" src="images/plane.svg" alt="Plane"/>
             </div>
         </div>
@@ -59,32 +67,38 @@
             <h1>We Offer Best Services</h1>
             <div class="services-block">
                 <div class="services-block__service-element">
-                    <img class="services-block__image" src="images/Categories/antena.svg"/>
+                    <div class="services-block__image-background" id="antena">
+                        <img class="services-block__image" src="images/Categories/antena.svg"/>
+                    </div>
                     <h4>Calculated Weather </h4>
                     <p>Built Wicket longer<br/>
                         admire do barton<br/>
                         vanity itself do in it.</p>
                 </div>
-                <div class="services-block__service-element">
-                    <img class="services-block__image" src="images/plane.svg"/>
+                <div class="services-block__service-element" id="plane-card">
+                    <div class="services-block__image-background" id="plane">
+                        <img class="services-block__image" src="images/plane.svg"/>
+                    </div>
                     <h4>Best Flights</h4>
                     <p>Engrossed listening.<br/>
                         Park gate sell they<br/>
                         west hard for the.</p>
-                </div>
-                <div class="services-block__service-element">
-                    <div>
-                        <img class="services-block__image" src="images/Categories/Micro.png"/>
-
-                    </div>
                     
+                </div>
+                <img class="services-block__plane-decore" src="images/Categories/CategoryRectRed.svg"/>
+                <div class="services-block__service-element">
+                    <div class="services-block__image-background" id="micro">
+                        <img class="services-block__image" src="images/Categories/Micro.png"/>
+                    </div>
                     <h4>Local Events</h4>
                     <p>Barton vanity itself<br/>
                         do in it. Preferd to men it<br/>
                         engrossed listening. </p>
                 </div>
                 <div class="services-block__service-element">
-                    <img class="services-block__image" src="images/Categories/gear.svg"/>
+                    <div class="services-block__image-background" id="gear">
+                        <img class="services-block__image" src="images/Categories/gear.svg"/>
+                    </div>
                     <h4>Customization</h4>
                     <p>We deliver outsourced<br/>
                         aviation services for<br/>
@@ -95,51 +109,127 @@
         <div class="third-block">
             <h3>Top Selling</h3>
             <h1>Top Destinations</h1>
-            <div>
-                <div>
-                    
+            <div class="cards-block">
+                <div class="cards-block__card-elemnt">
+                    <img class="cards-block__image" src="images/TopSelling/Rome.png"/>
+                    <div class="cards-block__card-text">
+                        <div class="cards-block__destination-price">
+                            <p>Rome, Italy</p>
+                            <p>$5.42k</p>
+                        </div>
+                        <div class="cards-block__trip-time">
+                            <img  src="images/TopSelling/TopSellingArrow.svg"/>
+                            <p>10 Days Trip</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    
+                <div class="cards-block__card-elemnt">
+                    <img class="cards-block__image" src="images/TopSelling/London.jpg"/>
+                    <div class="cards-block__card-text">
+                        <div class="cards-block__destination-price">
+                            <p>London, UK</p>
+                            <p>$4.2k</p>
+                        </div>
+                        <div class="cards-block__trip-time">
+                            <img src="images/TopSelling/TopSellingArrow.svg"/>
+                            <p>12 Days Trip</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    
+                <div class="cards-block__card-elemnt">
+                    <img class="cards-block__image" src="images/TopSelling/Europe.png"/>
+                    <div class="cards-block__card-text">
+                        <div class="cards-block__destination-price">
+                            <p>Full Europe</p>
+                            <p>$15k</p>
+                        </div>
+                        <div class="cards-block__trip-time">
+                            <img src="images/TopSelling/TopSellingArrow.svg"/>
+                            <p>28 Days Trip</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="forth-block">
+        <div class="fourth-block">
             <div>
                 <h3>Easy and Fast</h3>
                 <h1>Book Your Next Trip<br/> 
                     In 3 Easy Steps</h1>
-                <div>
-
+                <div class="fourth-block__step-element">
+                    <img src="images/EasyAndFast/Destination.svg"/>
+                    <div>
+                        <h4>Choose Destination</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur<br/> 
+                            adipiscing elit. Urna, tortor tempus. </p>
+                    </div>
                 </div>
-                <div>
-                        
+                <div class="fourth-block__step-element">
+                    <img src="images/EasyAndFast/Payment.svg"/>
+                    <div>
+                        <h4>Make Payment</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur<br/> 
+                            adipiscing elit. Urna, tortor tempus. </p>
+                    </div>    
                 </div>
-                <div>
-                        
+                <div class="fourth-block__step-element">
+                    <img src="images/EasyAndFast/Reach.svg"/>
+                    <div>
+                        <h4>Reach Airport on Selected Date</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur<br/> 
+                            adipiscing elit. Urna, tortor tempus. </p>
+                    </div>   
                 </div>
             </div>
-            <div>
-                    
+            <div class="trip-block">
+                <img class="trip-block__main-trip-image" src="images/EasyAndFast/MainTrip.jpg"/>
+                <h3 class="trip-block__trip-name">Trip To Greece</h3>
+                <p>14-29 June| by Robbin joseph</p>
+                <img class="trip-block__round-icon" src="images/EasyAndFast/leaf.svg"/>
+                <img class="trip-block__round-icon" src="images/EasyAndFast/map.svg"/>
+                <img class="trip-block__round-icon" src="images/EasyAndFast/send.svg"/>
+                <div class="trip-block__bottom-section">
+                    <div>
+                        <img src="images/EasyAndFast/building.svg"/>
+                        <p>24 people going</p>
+                    </div>
+                    <img src="images/EasyAndFast/heart.svg"/>
+                </div>
+                <div class="trip-block__ountgoing-trip">
+                    <img class="trip-block__ongoing-trip-image" src="images/EasyAndFast/OngoingTrip.png"/>
+                    <div>
+                        <p>Ongoing</p>
+                        <h3 class="trip-block__trip-name">Trip to rome</h3>
+                        <p class="trip-block__progress-bar-progress">40%</p>
+                        <p class="trip-block__progress-bar-text">completed</p>
+                        <div class="trip-block__progress-bar-out">
+                            <div class="trip-block__progress-bar-in"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="fifth-block">
-            <h3>TESTIMONIALS</h3>
-            <h1>What People Say<br/>
-                About Us.</h1>
             <div>
-
+                <h3>TESTIMONIALS</h3>
+                <h1>What People Say<br/>
+                    About Us.</h1>
+            </div>
+            <div class="fifth-block__text-container">
+                <img src="images/Testimonials/HappyMan.png"/>
+                <p>“On the Windows talking painted pasture yet its<br/>
+                    express parties use. Sure last upon he same as<br/>
+                    knew next. Of believed or diverted no.”</p>
+                <h3>Mike taylor</h3>
+                <p>Lahore, Pakistan</p>
             </div>
         </div>
         <div class="companies-block">
-            <img src=""/>
-            <img/>
-            <img/>
-            <img/>
-            <img/>
+            <img src="images/companies/company-axon.png" alt="Axon"/>
+            <img src="images/companies/company-jetstar.png" alt="Jetstar"/>
+            <img src="images/companies/company-expedia.png" alt="Expedia"/>
+            <img src="images/companies/company-qantas.png" alt="Qantas"/>
+            <img src="images/companies/company-alitalia.png" alt="Alitalia"/>
         </div>
     </body>
 </html>

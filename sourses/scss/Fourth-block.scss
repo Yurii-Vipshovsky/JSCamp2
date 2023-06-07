@@ -1,0 +1,128 @@
+.fourth-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+
+    h1{
+        text-align: left;
+        margin-top: 0;
+        line-height: 60px;
+    }
+
+    &__step-element{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10%;
+
+        img{
+            margin-right: 20px;
+        }
+
+        h4{
+            margin: 0;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.25em;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgb(94, 98, 130);
+        }
+
+        p{
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
+
+.trip-block{
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 30px -20px 50px 10px rgba(89, 177, 230, 0.2), 
+                0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    p{
+        text-align: left;
+    }
+
+    &__main-trip-image{
+        border: 1px solid;
+        border-radius: 30px;
+    }
+
+    &__trip-name{
+        font-size: 1.125em;
+        font-weight: 500;
+        line-height: 1.375em;
+        letter-spacing: 0.015em;
+        text-align: left;
+        color: #080809;
+    }
+
+    &__round-icon{
+        background-color: #F5F5F5;
+        border-radius: 50%;
+        min-width: 36px;
+    }
+
+    &__bottom-section{
+        display: flex;
+        justify-content: space-between;
+        p{
+            display: inline;
+        }
+    }
+
+    &__ountgoing-trip{
+        position: absolute;
+        top:200px;
+        right: -100px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border-radius: 30px;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+        background-color: #FFF;
+        padding: 20px;
+
+        p{
+            margin: 0;
+        }
+        
+        h3{
+            margin-top: 0;
+        }
+    }
+
+    &__ongoing-trip-image{
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &__progress-bar-progress{
+        display: inline;
+        color: rgb(138, 121, 223);
+    }
+
+    &__progress-bar-text{
+        
+        display: inline;
+        color: rgb(8, 8, 9);
+    }
+
+    &__progress-bar-out{
+        border-radius: 3px;
+        background-color: #F5F5F5;
+        height: 5px;
+        width: 10vw;
+    }
+
+    &__progress-bar-in{
+        width: 40%;
+        height: 100%;
+        border-radius: 3px;
+        background-color: #8A79DF;
+    }
+}

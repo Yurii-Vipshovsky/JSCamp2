@@ -16,7 +16,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 10px;
-  padding: 5% 10%;
+  padding: 20px 40px;
 }
 .companies-block img:hover {
   -webkit-filter: grayscale(0%);

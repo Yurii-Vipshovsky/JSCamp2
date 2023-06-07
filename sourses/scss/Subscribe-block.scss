@@ -1,0 +1,60 @@
+.subscribe-block{
+    margin-top: 15vh;
+    background-image: url("../images/Subscribe/subscribe-crosses.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+    &__box{
+        height: 30vh;
+        min-height: 400px;
+        background-color: rgba(223, 215, 249, 0.2);
+        background-image: url("../images/Subscribe/subscribe-left-decor.svg"), url("../images/Subscribe/subscribe-right-decor.svg");
+        background-position: -8% 100%, 100% 0%;
+        background-repeat: no-repeat, no-repeat;
+        border-top-left-radius: 120px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            position: relative;
+            left: 50%;
+            top: -5%;
+        }
+    }
+    
+    &__text{
+        font-size: 2.0625em;
+        font-weight: 600;
+        color:#5E6282;
+    }
+
+    &__input-element{
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    input{
+        width: 30%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        padding-left: 30px;
+    }
+
+    button{
+        margin-left: 3%;
+        width: 10%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+        color: #FFF;
+    }
+}

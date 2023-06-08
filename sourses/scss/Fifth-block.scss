@@ -33,3 +33,26 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .fifth-block{
+        flex-direction: column;
+        align-items: center;
+        &__text-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                position: static;
+            }
+        }
+        &__name{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}

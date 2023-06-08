@@ -23,4 +23,15 @@
           filter: grayscale(0%);
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 900px) {
+  .companies-block {
+    margin-top: 10vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 50vh;
+  }
 }/*# sourceMappingURL=Companies-block.css.map */

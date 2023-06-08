@@ -66,4 +66,37 @@
 .subscribe-block__decore {
   position: absolute;
   left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+  .subscribe-block {
+    margin-top: 10vh;
+  }
+  .subscribe-block__text {
+    display: none;
+  }
+  .subscribe-block__box {
+    background-color: #FFF;
+    background-image: none;
+    height: 50px;
+    min-height: 50px;
+  }
+  .subscribe-block__box img {
+    position: absolute;
+    left: 70%;
+    top: 1px;
+    height: 56px;
+  }
+  .subscribe-block__input-element input {
+    display: none;
+  }
+  .subscribe-block__input-element button {
+    height: 56px;
+    margin-left: 0;
+    width: 150px;
+    border-radius: 10px;
+  }
+  .subscribe-block__decore {
+    display: none;
+  }
 }/*# sourceMappingURL=Subscribe-block.css.map */

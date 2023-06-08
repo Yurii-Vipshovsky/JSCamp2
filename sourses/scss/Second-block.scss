@@ -4,6 +4,11 @@
     background-position: 100% 0%;
     background-repeat: no-repeat;
 
+    &__more-services{
+        display: none;
+        font-size: 1.25em;
+    }
+
     h3{
         text-align: center;
         margin-bottom: 0.5em;
@@ -81,5 +86,44 @@
         text-align: center;
         color: rgb(30, 29, 76);
         ;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .second-block{
+        background-image: none;
+
+        &__more-services{
+            display: block;
+        }
+    }
+
+    .services-block{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+
+        &__element{
+            margin-bottom: 10vh;
+
+            &_hidden-mobile{
+                display: none;
+            }
+        }
+
+        &__service-element{
+            width: 50vw;
+        }
+
+        &__image-background{
+            &#antena{
+                background-position: 60% 80%;
+            }
+        }
+
+        &__hover-decore{
+            left: -10%;
+        }
     }
 }

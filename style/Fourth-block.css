@@ -78,7 +78,7 @@
 .trip-block__bottom-section p {
   display: inline;
 }
-.trip-block__ountgoing-trip {
+.trip-block__ongoing-trip {
   position: absolute;
   top: 200px;
   right: -100px;
@@ -98,10 +98,10 @@
   background-color: #FFF;
   padding: 20px;
 }
-.trip-block__ountgoing-trip p {
+.trip-block__ongoing-trip p {
   margin: 0;
 }
-.trip-block__ountgoing-trip h3 {
+.trip-block__ongoing-trip h3 {
   margin-top: 0;
 }
 .trip-block__ongoing-trip-image {
@@ -127,4 +127,26 @@
   height: 100%;
   border-radius: 3px;
   background-color: #8A79DF;
+}
+
+@media screen and (max-width: 900px) {
+  .fourth-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url("../images/Subscribe/subscribe-crosses.svg"), url("../images/Subscribe/subscribe-crosses.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -10% -8%, 100% 100%;
+    min-height: 120vh;
+  }
+  .fourth-block h3 {
+    display: none;
+  }
+  .fourth-block h1 {
+    text-align: center;
+  }
+  .trip-block__ongoing-trip {
+    display: none;
+  }
 }/*# sourceMappingURL=Fourth-block.css.map */

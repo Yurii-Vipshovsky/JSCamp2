@@ -62,3 +62,38 @@
         left: -50%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .subscribe-block{
+        margin-top: 10vh;
+        &__text{
+            display: none;
+        }
+        &__box{
+            background-color: #FFF;
+            background-image: none;
+            height: 50px;
+            min-height: 50px;
+            img{
+                position: absolute;
+                left: 70%;
+                top: 1px;
+                height: 56px;
+            }
+        }
+        &__input-element{
+            input{
+                display: none;
+            }
+            button{
+                height: 56px;
+                margin-left: 0;
+                width: 150px;
+                border-radius: 10px;
+            }
+        }
+        &__decore{
+            display: none;
+        }
+    }
+}

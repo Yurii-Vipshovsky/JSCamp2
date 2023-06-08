@@ -8,6 +8,10 @@ footer{
     justify-content: space-around;
     margin-bottom: 5vh;
 
+    img{
+        cursor: pointer;
+    }
+
     p{
         text-align: left;
     }
@@ -29,13 +33,16 @@ footer{
         display: flex;
         width: 40%;
         justify-content: space-around;
+        p{
+            cursor: pointer;
+        }
     }
     
     &__menu-category{
         color: #080809;
         font-size: 1.3125em;
         font-weight: 700;
-        line-height: 1.625em;
+        line-height: 1.625em;        
     }
 
     &__social-and-apps{

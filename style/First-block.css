@@ -1,3 +1,63 @@
+@-webkit-keyframes planeAnimation {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  25% {
+    -webkit-transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(300px, -200px);
+            transform: translate(300px, -200px);
+  }
+  75% {
+    -webkit-transform: translate(400px, -250px);
+            transform: translate(400px, -250px);
+  }
+  100% {
+    -webkit-transform: translate(1000px, -1000px);
+            transform: translate(1000px, -1000px);
+  }
+}
+@keyframes planeAnimation {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  25% {
+    -webkit-transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(300px, -200px);
+            transform: translate(300px, -200px);
+  }
+  75% {
+    -webkit-transform: translate(400px, -250px);
+            transform: translate(400px, -250px);
+  }
+  100% {
+    -webkit-transform: translate(1000px, -1000px);
+            transform: translate(1000px, -1000px);
+  }
+}
 .first-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,6 +102,11 @@
 }
 .first-block__image-element {
   position: relative;
+  background: url("../images/First-block/Traveller.png");
+  width: 780px;
+  min-height: 764px;
+  background-repeat: no-repeat;
+  margin-left: 5vw;
 }
 .first-block__buttons {
   display: -webkit-box;
@@ -92,12 +157,80 @@
   top: 10%;
   right: 60%;
 }
+.first-block__first-plane:hover {
+  -webkit-animation: planeAnimation linear 3s 1;
+          animation: planeAnimation linear 3s 1;
+}
 .first-block__second-plane {
   position: absolute;
   top: 15%;
-  right: -3%;
+  right: -5%;
 }
-.first-block__traveller {
-  position: relative;
-  z-index: 2;
+.first-block__second-plane:hover {
+  -webkit-animation: planeAnimation linear 3s 1;
+          animation: planeAnimation linear 3s 1;
+}
+.first-block__mobile-plane {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .first-block {
+    height: 60vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10vh;
+    position: relative;
+    background-image: url("../images/Categories/CategoryCrosses.svg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .first-block__decore {
+    display: none;
+  }
+  .first-block__text-element {
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .first-block__text-element h2 {
+    display: none;
+  }
+  .first-block__description {
+    display: none;
+  }
+  .first-block__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 20vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .first-block__play-demo-element {
+    width: 100%;
+  }
+  .first-block__image-element {
+    display: none;
+  }
+  .first-block__mobile-plane {
+    display: block;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@media screen and (max-width: 550px) {
+  .first-block h1 {
+    font-size: 3em;
+  }
 }/*# sourceMappingURL=First-block.css.map */

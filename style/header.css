@@ -19,7 +19,7 @@
 .header-block__select-lang {
   position: relative;
   display: inline-block;
-  margin-right: 7vw;
+  margin-right: 4vw;
 }
 .header-block__select-lang:hover .header-block__dropdown-content {
   display: block;
@@ -27,10 +27,15 @@
 .header-block__dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
+}
+.header-block__dropdown-content p {
+  cursor: pointer;
+}
+.header-block__burger-menu {
+  display: none;
 }
 
 .menu-block {
@@ -46,6 +51,13 @@
 .menu-block__link {
   text-decoration: none;
   color: #212832;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu-block__link:hover {
+  color: #2a528a;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .auth-block {
@@ -63,6 +75,13 @@
 .auth-block__login {
   font-weight: 500;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.auth-block__login:hover {
+  color: #2a528a;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .auth-block__sign-up {
   border: 1px solid rgb(33, 40, 50);
@@ -76,4 +95,46 @@
   letter-spacing: 0em;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.auth-block__sign-up:hover {
+  color: #2a528a;
+  border: 1px solid #2a528a;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+  .auth-block {
+    display: none;
+  }
+  .header-block {
+    padding: 5vh 5vw;
+    display: grid;
+    background-color: #FFF1DA;
+    grid-template-columns: 5fr 1fr 1fr;
+  }
+  .header-block__burger-menu {
+    display: block;
+  }
+  .menu-block {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-self: center;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-block a {
+    color: #737373;
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 2.8125em;
+  }
 }/*# sourceMappingURL=header.css.map */

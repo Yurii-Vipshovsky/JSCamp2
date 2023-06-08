@@ -33,3 +33,10 @@ h3{
     color: rgb(94, 98, 130);
 }
 
+@media screen and (max-width: 900px) {
+    body{
+        padding: 0;
+        background-image: none;
+        margin: 0;
+    }
+}

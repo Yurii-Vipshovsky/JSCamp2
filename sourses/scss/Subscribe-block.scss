@@ -1,8 +1,6 @@
 .subscribe-block{
     margin-top: 15vh;
-    background-image: url("../images/Subscribe/subscribe-crosses.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
+    position: relative;
 
     &__box{
         height: 30vh;
@@ -56,5 +54,11 @@
         border-radius: 5px;
         background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
         color: #FFF;
+        cursor: pointer;
+    }
+
+    &__decore{
+        position: absolute;
+        left: -50%;
     }
 }

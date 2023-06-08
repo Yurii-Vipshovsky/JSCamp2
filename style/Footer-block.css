@@ -11,6 +11,9 @@ footer {
       justify-content: space-around;
   margin-bottom: 5vh;
 }
+.footer-block img {
+  cursor: pointer;
+}
 .footer-block p {
   text-align: left;
 }
@@ -32,6 +35,9 @@ footer {
   width: 40%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+.footer-block__menu p {
+  cursor: pointer;
 }
 .footer-block__menu-category {
   color: #080809;

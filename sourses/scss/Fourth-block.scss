@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+
 .fourth-block{
     display: flex;
     justify-content: space-around;
@@ -26,7 +29,7 @@
             line-height: 1.25em;
             letter-spacing: 0em;
             text-align: left;
-            color: rgb(94, 98, 130);
+            color: $base-text-color;
         }
 
         p{
@@ -40,7 +43,7 @@
     position: relative;
     border-radius: 30px;
     box-shadow: 30px -20px 50px 10px rgba(89, 177, 230, 0.2), 
-                0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+                $base-shadow;
     padding: 20px;
 
     p{
@@ -58,7 +61,7 @@
         line-height: 1.375em;
         letter-spacing: 0.015em;
         text-align: left;
-        color: #080809;
+        color: $almoust-black-text;
     }
 
     &__round-icon{
@@ -83,7 +86,7 @@
         flex-direction: row;
         align-items: flex-start;
         border-radius: 30px;
-        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: $base-shadow;
         background-color: #FFF;
         padding: 20px;
 
@@ -103,13 +106,13 @@
 
     &__progress-bar-progress{
         display: inline;
-        color: rgb(138, 121, 223);
+        color: $progress-bar-collor;
     }
 
     &__progress-bar-text{
         
         display: inline;
-        color: rgb(8, 8, 9);
+        color: $almoust-black-text;
     }
 
     &__progress-bar-out{
@@ -123,13 +126,13 @@
         width: 40%;
         height: 100%;
         border-radius: 3px;
-        background-color: #8A79DF;
+        background-color: $progress-bar-collor;
     }
 }
 
 @media screen and (max-width: 900px) {
     .fourth-block{
-        flex-direction: column;
+        @include flex-column;
         background-image: url("../images/Subscribe/subscribe-crosses.svg"), url("../images/Subscribe/subscribe-crosses.svg");
         background-repeat: no-repeat, no-repeat;
         background-position: -10% -8%, 100% 100%;

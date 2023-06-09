@@ -11,7 +11,7 @@
     display: flex;
 
     &__decore{
-        box-shadow: 0 0px 200px 40px #D5AEE4;
+        box-shadow: $decore-shadow;
         width: 5vw;
         height: 5vw;
         border-radius: 50%;
@@ -21,8 +21,8 @@
     }
 
     &__text-element{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
+        align-items: normal;
         margin-top: 10vh;
     
         h2{
@@ -69,10 +69,10 @@
         line-height: 1.4375em;
         letter-spacing: 0em;
         text-align: center;
-        background-color: #F1A501;
+        background-color: $find-out-button-color;
         border-radius: 10px;
-        border: solid #F1A501;
-        box-shadow: 0px 1em 2em rgba(241, 165, 1, 0.4);
+        border: solid $find-out-button-color;
+        box-shadow: 0px 1em 2em rgba($find-out-button-color, 0.4);
         cursor: pointer;
     }
 
@@ -90,8 +90,8 @@
         height: 3.75em;
         width: 3.75em;
         border-radius: 50%;
-        background-color: rgb(223, 105, 81);
-        box-shadow: 0px 1em 2em rgba(223, 105, 81, 0.4);
+        background-color: $play-demo-button-color;
+        box-shadow: 0px 1em 2em rgba($play-demo-button-color, 0.4);
     }
 
     &__first-plane{

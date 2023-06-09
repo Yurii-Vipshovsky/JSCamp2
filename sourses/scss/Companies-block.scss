@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+
 .companies-block{
     display: flex;
     align-items: center;
@@ -6,21 +9,21 @@
     
     img{
         filter: grayscale(100%);
-        transition: 0.3s;
+        transition: $base-transition-time;
         border-radius: 10px;
         padding: 20px 40px;
     }
 
     img:hover{
         filter: grayscale(0%);
-        box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: $base-shadow;
     }
 }
 
 @media screen and (max-width: 900px) {
     .companies-block{
         margin-top: 10vh;
-        flex-direction: column;
+        @include flex-column;
         min-height: 50vh;
     }
 }

@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+
 .fifth-block{
     display: flex;
     justify-content: space-around;
@@ -11,7 +14,7 @@
 
     &__text-container{
         border-radius: 10px;
-        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: $base-shadow;
         padding: 40px;
         padding-right: 80px;
         position: relative;
@@ -36,20 +39,15 @@
 
 @media screen and (max-width: 900px) {
     .fifth-block{
-        flex-direction: column;
-        align-items: center;
+        @include flex-column;
         &__text-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column;
             img{
                 position: static;
             }
         }
         &__name{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column;
             h1{
                 text-align: center;
             }

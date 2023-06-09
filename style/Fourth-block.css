@@ -33,7 +33,7 @@
   line-height: 1.25em;
   letter-spacing: 0em;
   text-align: left;
-  color: rgb(94, 98, 130);
+  color: #5e6282;
 }
 .fourth-block__step-element p {
   margin: 0;
@@ -43,8 +43,8 @@
 .trip-block {
   position: relative;
   border-radius: 30px;
-  -webkit-box-shadow: 30px -20px 50px 10px rgba(89, 177, 230, 0.2), 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 30px -20px 50px 10px rgba(89, 177, 230, 0.2), 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 30px -20px 50px 10px rgba(89, 177, 230, 0.2), 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 30px -20px 50px 10px rgba(89, 177, 230, 0.2), 0 20px 20px 0px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 .trip-block p {
@@ -60,7 +60,7 @@
   line-height: 1.375em;
   letter-spacing: 0.015em;
   text-align: left;
-  color: #080809;
+  color: rgb(8, 8, 9);
 }
 .trip-block__round-icon {
   background-color: #F5F5F5;
@@ -93,8 +93,8 @@
       -ms-flex-align: start;
           align-items: flex-start;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
   background-color: #FFF;
   padding: 20px;
 }
@@ -110,7 +110,7 @@
 }
 .trip-block__progress-bar-progress {
   display: inline;
-  color: rgb(138, 121, 223);
+  color: #8a79df;
 }
 .trip-block__progress-bar-text {
   display: inline;
@@ -126,11 +126,17 @@
   width: 40%;
   height: 100%;
   border-radius: 3px;
-  background-color: #8A79DF;
+  background-color: #8a79df;
 }
 
 @media screen and (max-width: 900px) {
   .fourth-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
